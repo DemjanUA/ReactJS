@@ -1,0 +1,8 @@
+{
+    "name" : "ReactApp",
+    "version" : "1.0.0",
+    "description" : "The first app with ReacJS",
+    "scritps" : {
+        "start" : "babel app.jsx app.js -o -w"
+    }
+}
