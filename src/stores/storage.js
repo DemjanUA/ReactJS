@@ -1,6 +1,7 @@
 'use strict';
 
-var storage = [{
+const storage = [
+{
     'id': 1,
     'imageURL': 'https://facebook.github.io/react/img/logo.svg',
     'title': 'React',
@@ -32,4 +33,4 @@ var storage = [{
     'subtitle': 'CSS extension language'
 }];
 
-module.exports = storage;
+export default storage;

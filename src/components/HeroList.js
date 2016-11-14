@@ -1,30 +1,8 @@
-import storage from './storage';
+import React from 'react';
+import Hero from './Hero';
+import storage from '../stores/storage';
 
-console.log(storage);
-var Hero = React.createClass({
-    getInitialState : function() {
-        return {
-            count : 0
-        };
-    },
-
-    handleClick : function() {
-        this.setState({ count : this.state.count + 1 })
-    },
-
-    render : function() {
-        return (
-            <div className="container">
-                <div className="count">{ this.state.count }</div>
-                <img src={ this.props.imageURL } onClick={ this.handleClick }/>
-                <h1>{ this.props.title }</h1>
-                <p>{ this.props.subtitle }</p>
-            </div>
-        );
-    }
-});
-
-var HeroList = React.createClass({
+let HeroList = React.createClass({
     getInitialState : function() {
         return {
             list : storage
@@ -66,7 +44,4 @@ var HeroList = React.createClass({
     }
 });
 
-ReactDOM.render(
-    <HeroList />
-    , document.getElementById('root')
-);
+export default HeroList;
