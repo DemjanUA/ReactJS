@@ -1,9 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #222222;
-    color: white;
-    font-family: sans-serif;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #fafafa;
 }
 
 input {
@@ -11,6 +13,8 @@ input {
 }
 
 .search {
+    margin: 0;
+    padding: 16px 50px;
     text-align: right;
 }
 
@@ -30,7 +34,6 @@ input {
 
 .search input[type="text"] {
     padding: 5px 20px 5px 40px;
-    color: #fff;
     font-size: inherit;
     line-height: 2em;
     border: none;
@@ -39,9 +42,7 @@ input {
 }
 
 #root {
-    text-align: center;
-    margin: 30px 0 50px;
-    padding: 0 20px;
+
 }
 
 img {
@@ -79,7 +80,6 @@ img {
     margin: 0 auto;
     border-radius: 10%;
     background: rgba(255, 255, 255, .25);
-    color: #ccc;
     transition: all .2s;
     cursor: pointer;
 }
@@ -92,5 +92,41 @@ img {
 }
 .add-framework:hover {
     background: rgba(255, 255, 255, .3);
-    color: rgba(255, 255, 255, .9);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+main aside {
+    min-width: 300px;
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    border-right: 1px solid rgba(0, 0, 0, 0.14);
+    background: #fff;
+}
+
+main .workZone {
+    text-align: center;
+}
+
+header {
+    box-sizing: border-box;
+    height: 256px;
+    padding: 115px 16px 0;
+    background: #00897B;
+}
+
+header h3 {
+    margin: 0 auto;
+    padding: 0 60px;
+    width: 1160px;
+    font-size: 56px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
 }

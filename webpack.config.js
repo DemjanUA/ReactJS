@@ -15,7 +15,7 @@ module.exports = {
               exclude: /(node_modules|bower_components)/,
               loader: 'babel', // 'babel-loader' is also a valid name to reference
               query: {
-                "presets": ["es2015", "es2016", "es2017", "react"]
+                "presets": ["es2015", "es2016", "es2017","stage-1", "react"]
               }
             }
         ]  

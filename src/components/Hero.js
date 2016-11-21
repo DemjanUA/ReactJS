@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-let Hero = React.createClass({
-    getInitialState : function() {
-        return {
-            count : 0
-        };
-    },
+class Hero extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {count : 0};
+    }
 
-    handleClick : function() {
+    handleClick = () => {
         this.setState({ count : this.state.count + 1 })
-    },
+    };
 
-    render : function() {
+    render() {
         return (
             <div className="container">
                 <div className="count">{ this.state.count }</div>
@@ -21,6 +20,6 @@ let Hero = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Hero;

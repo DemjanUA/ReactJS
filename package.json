@@ -13,6 +13,8 @@
     "babel-preset-es2016": "^6.16.0",
     "babel-preset-es2017": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "material-ui": "^0.16.1",
     "webpack": "^1.13.3"
   },
   "dependencies": {
